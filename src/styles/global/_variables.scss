@@ -21,7 +21,9 @@ $base-vertical-margin:      16px;
  *
  ************************************************************************************************/
 
-$gray: #232323;
+$gray-light: #eaeaea;
+$gray: #cdcdcd;
+$gray-dark: #232323;
 $white: #fff;
 
 /* temperature colors */
@@ -35,8 +37,10 @@ $seventies-above: #f07c21;
 
 /*
  *
- * spacing
+ * global properties
  *
  ************************************************************************************************/
 
 $spacer: 16px;
+
+$transition-duration: .3s;

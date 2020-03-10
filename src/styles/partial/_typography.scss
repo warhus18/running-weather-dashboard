@@ -8,7 +8,7 @@ body {
   @include line-height(14, 30);
 
   font-family: $primary-font;
-  color: $gray;
+  color: $gray-dark;
   // make everything look a little nicer in webkit
   -webkit-font-smoothing: antialiased;
 

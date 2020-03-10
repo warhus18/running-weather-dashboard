@@ -7,8 +7,9 @@
       </div>
     </header>
     <main class="container container--max-width">
-      <div class="container__grid container__grid--thirds">
-        <aside>
+      <article class="container__grid">
+        <date-time :weather="weather" />
+        <section>
           <div>
             <label for="location-search">Enter Search Item</label>
             <input
@@ -19,12 +20,9 @@
               @keypress="fetchWeather"
             />
           </div>
-          <date-time :weather="weather" />
-        </aside>
-        <article>
-          <main-content :weather="weather" />
-        </article>
-      </div>
+        </section>
+        <main-content :weather="weather" />
+      </article>
     </main>
     <footer class="footer__container">
       <div class="footer__inner">

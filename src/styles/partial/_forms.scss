@@ -1,0 +1,73 @@
+/*
+ * form styles
+ *
+ ************************************************************/
+
+label {
+  @include line-height(12, 18);
+  @include font-size(12);
+
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: $primary-font-bold;
+  color: $gray-dark;
+}
+
+input {
+  @include font-size(12);
+
+  display: block;
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+  border: 2px solid $gray;
+  padding: 12px 16px;
+  width: 100%;
+  height: auto;
+  font-family: $primary-font;
+  color: $gray-dark;
+
+  &:focus {
+    outline: 0; /* clear default to set custom state below */
+    outline-offset: unset;
+  }
+}
+
+input[type='search'] {
+  /* override iOS box shadows */
+  border: 2px solid $gray; 
+  transition: border-color $transition-duration;
+  appearance: none;
+
+  &:focus {
+    border-color: $gray-dark;
+  }
+}
+
+input {
+
+  &::-webkit-input-placeholder {
+    font-family: $primary-font;
+    color: $gray-dark;
+  }
+
+  &:-moz-placeholder {
+    font-family: $primary-font;
+    color: $gray-dark;
+  }
+
+  &::-moz-placeholder {
+    font-family: $primary-font;
+    color: $gray-dark;
+  }
+
+  &:-ms-input-placeholder {
+    line-height: 1px;
+    font-family: $primary-font;
+    color: $gray-dark;
+  }
+
+  &::-ms-clear {
+    display: none; /* hide IE11/Edge input clear icon */
+  }
+}
