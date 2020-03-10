@@ -1,1 +1,16 @@
+/*
+ * global style imports
+ *
+ ************************************************/
+
+@import 'global/mixins';
+@import 'global/base';
+@import 'global/fonts';
 @import 'global/variables';
+
+/*
+ * partial style imports
+ *
+ ************************************************/
+
+@import 'partial/typography';

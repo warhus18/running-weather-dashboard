@@ -1,4 +1,32 @@
-body {
-  background-color: black;
-  color: white;
-}
+/*
+ *
+ * fonts
+ *
+ ************************************************************************************************/
+
+$primary-font: 'montserratregular', sans-serif;
+$primary-font-i: 'montserratitalic', sans-serif;
+$primary-font-bold: 'montserratbold', sans-serif;
+$primary-font-bold-i: 'montserratbold_italic', sans-serif;
+
+$base-font-size:            16;
+$base-line-height:          1.5;
+$base-margin-bottom:        ($base-font-size * $base-line-height) * 1px;
+$base-vertical-margin:      16px;
+
+
+/*
+ *
+ * colors
+ *
+ ************************************************************************************************/
+
+$text-color: #232323;
+
+/* temperature colors */
+$below-freezing: #006a89;
+$thirties: #01a5ce;
+$forties: #26bbb5;
+$fifties: #6bb774;
+$sixties: #f4c942;
+$seventies-above: #f07c21;

@@ -1,0 +1,101 @@
+/*
+ * typography
+ *
+ ************************************************************/
+
+/* font size - unitless - @include font-size(16) */
+@mixin font-size($font-size: $base-font-size) {
+  $rem: ($font-size / $base-font-size);
+  font-size: $font-size * 1px;
+  font-size: #{$rem}rem;
+}
+
+/* line height - unitless - @include line-height(16); */
+@mixin line-height($font-size, $line-height: $font-size) {
+  line-height: ($line-height / $font-size);
+}
+
+
+/*
+ * define BEM naming conventions
+ *
+ ************************************************************/
+
+// Block Element
+// @param {String} $element - Element name
+@mixin element($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+// Block Modifier
+// @param {String} $modifier - Modifier name
+@mixin modifier($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// @alias element
+@mixin bem-e($element) {
+
+  @include element($element) {
+    @content;
+  }
+}
+
+// @alias modifier
+@mixin bem-m($modifier) {
+
+  @include modifier($modifier) {
+    @content;
+  }
+}
+
+
+/*
+ * clearfix
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ *
+ * Source: http://nicolasgallagher.com/micro-clearfix-hack/
+ *
+ ****************************************************************************/
+
+@mixin clearfix() {
+
+  &::before,
+  &::after {
+    display: table;
+    content: ' ';
+  }
+
+  &::after { clear: both; }
+}
+
+
+/*
+ * screen-reader only
+ *
+ * Hide from the view content that still needs to be digested by screen readers
+ *
+ ****************************************************************************/
+
+@mixin u-sr-only() {
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap; /* 1 */
+  clip: rect(0 0 0 0);
+}
