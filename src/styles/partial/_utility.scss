@@ -1,0 +1,96 @@
+/*
+ * screen readers
+ *
+ ****************************************************************************/
+  
+// hide visually and from screen readers
+.u-hidden { display: none !important; }
+
+/* hide an element from the screen but visible to screen readers
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ * http://a11yproject.com/posts/how-to-hide-content/
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+.u-sr-only {
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap; /* 1 */
+  clip: rect(0 0 0 0);
+
+  /*
+   * Extends the .visuallyhidden class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  &.u-focusable:active,
+  &.u-focusable:focus {
+    position: static;
+    margin: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    white-space: inherit;
+    clip: auto;
+  }
+}
+
+.u-sr-reveal {
+  position: relative;
+  display: block;
+  margin: 12px 0 0 0;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  white-space: normal;
+  clip: auto;
+}
+
+/*
+ * spacing
+ *
+ ************************************************************/
+
+.u-margin-hug {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+
+  &-top       { margin-top: 0 !important; }
+  &-right     { margin-right: 0 !important; }
+  &-bottom    { margin-bottom: 0 !important; }
+  &-left      { margin-left: 0 !important; }
+}
+
+/*
+ * list element layout
+ *
+ ****************************************************************************/
+
+.u-list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*
+ * text adjustments
+ *
+ ****************************************************************************/
+
+// set text alignment
+.u-text-left        { text-align: left; }
+.u-text-right       { text-align: right; }
+.u-text-center      { text-align: center; }
+
+// set text transform
+.u-text-lowercase   { text-transform: lowercase; }
+.u-text-uppercase   { text-transform: uppercase; }
+.u-text-capitalize  { text-transform: capitalize; }
+.u-text-none        { text-transform: none; }

@@ -1,0 +1,11 @@
+.footer {
+
+  @include bem-e('container') {
+    background-color: $gray;
+    color: $white;
+  }
+
+  @include bem-e('inner') {
+    padding: ($spacer / 2) 0;
+  }
+}

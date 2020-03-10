@@ -27,8 +27,10 @@
       </div>
     </main>
     <footer class="footer__container">
-      <div class="container container--max-width">
-        <p>This application was designed and developed by Jessica Gidding.</p>
+      <div class="footer__inner">
+        <div class="container container--max-width">
+          <p class="u-margin-hug-top u-margin-hug-bottom u-text-center">This application was designed and developed by Jessica Gidding.</p>
+        </div>
       </div>
     </footer>
   </div>
