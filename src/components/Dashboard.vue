@@ -8,8 +8,8 @@
       </div>
     </header>
     <main>
-      <article class="container__grid container__grid--centered container__grid--max-xs">
-        <section>
+      <article>
+        <section class="container__grid container__grid--centered container__grid--max-xs">
           <p>Going for a run? See how many layers you should put on!</p>
           <div>
             <label for="location-search">Enter Search Item</label>
