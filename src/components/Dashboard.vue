@@ -1,15 +1,16 @@
 <template>
   <div>
-    <header>
+    <header class="header__container">
       <div class="container container--max-width">
-        <h1>Running Weather Dashboard</h1>
-        <p>Going for a run? See how many layers you should put on!</p>
+        <div class="u-text-center header__inner">
+          <h1 class="u-margin-hug-top u-margin-hug-bottom u-text-uppercase h3">Running Weather Dashboard</h1>
+        </div>
       </div>
     </header>
-    <main class="container container--max-width">
-      <article class="container__grid">
-        <date-time :weather="weather" />
+    <main>
+      <article class="container__grid container__grid--centered container__grid--max-xs">
         <section>
+          <p>Going for a run? See how many layers you should put on!</p>
           <div>
             <label for="location-search">Enter Search Item</label>
             <input
@@ -21,6 +22,7 @@
             />
           </div>
         </section>
+        <date-time :weather="weather" />
         <main-content :weather="weather" />
       </article>
     </main>

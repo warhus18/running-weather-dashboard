@@ -3,12 +3,12 @@
  *
  ************************************************************/
 
-// @mixin grid-setup() {
-//   display: grid;
-//   grid-template-rows: auto;
-//   grid-template-columns: 1fr;
-//   grid-gap: 20px;
-// }
+@mixin grid-setup() {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
 
 .app-container {
   overflow: hidden;
@@ -25,11 +25,20 @@
     max-width: 1400px;
   }
 
-  // @include bem-e('grid') {
-  //   @include grid-setup();
+  @include bem-e('grid') {
+    @include grid-setup();
 
-  //   @include bem-m('thirds') {
-  //     grid-template-columns: 1fr 2fr;
-  //   }
-  // }
+    @include bem-m('centered') {
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    @include bem-m('max-xs') {
+      max-width: $screen-xs;
+    }
+
+    // @include bem-m('thirds') {
+    //   grid-template-columns: 1fr 2fr;
+    // }
+  }
 }

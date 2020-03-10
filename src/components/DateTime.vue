@@ -1,12 +1,20 @@
 <template>
-  <section v-if="typeof weather.main != 'undefined'">
-    <div>
-      <p>{{ weather.name }}</p> <!-- location -->
-      <p><time datetime="">{{ dateBuilder() }}</time></p>
-    </div>
-    <div>
-      <p>{{ Math.round(weather.main.temp) }} °F</p> <!-- temperature -->
-      <p>{{ weather.weather[0].main }}</p> <!-- weather description -->
+  <section>
+    <div v-if="typeof weather.main != 'undefined'">
+      <div class="temperature__container">
+        <div class="container container--max-width">
+          <p>{{ Math.round(weather.main.temp) }} °F</p> <!-- temperature -->
+          <p>{{ weather.weather[0].main }}</p> <!-- weather description -->
+        </div>
+      </div>
+      <!-- /.temperature__container -->
+      <div class="location__container">
+        <div class="container container--max-width">
+          <p>{{ weather.name }}</p> <!-- location -->
+          <p><time datetime="">{{ dateBuilder() }}</time></p>
+        </div>
+      </div>
+      <!-- /.ocation__container -->
     </div>
   </section>
 </template>

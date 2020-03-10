@@ -1,9 +1,9 @@
 /*
- * footer
+ * header
  *
  ************************************************************/
 
-.footer {
+.header {
 
   @include bem-e('container') {
     background-color: $gray-dark;
