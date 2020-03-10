@@ -1,0 +1,35 @@
+/*
+ * site container and grid elements
+ *
+ ************************************************************/
+
+@mixin grid-setup() {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.app-container {
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  min-width: 0;
+
+  @include bem-m('max-width') {
+    margin: 0 auto;
+    padding-right: 24px;
+    padding-left: 24px;
+    max-width: 1400px;
+  }
+
+  @include bem-e('grid') {
+    @include grid-setup();
+
+    @include bem-m('thirds') {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+}
