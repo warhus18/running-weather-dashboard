@@ -1,126 +1,142 @@
-{
-  "below-freezing": [
-    {
-      "icon": "test.svg",
-      "text": "Tights"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Running pants"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Thin, base layer long sleeve shirt"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Long sleeve fleece"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Wind/water resistant jacket"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Gloves"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Thermal hat or headband"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Neck warmer"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Sunglasses"
-    }
-  ],
-  "thirties": [
-    {
-      "icon": "test.svg",
-      "text": "Tights"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Thin, base layer long sleeve shirt"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Wind/water resistant jacket"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Gloves"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Thermal hat or headband"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Sunglasses"
-    }
-  ],
-  "forties": [
-    {
-      "icon": "test.svg",
-      "text": "Tights"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Long-sleeved base layer"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Wind resistant vest"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Sunglasses"
-    }
-  ],
-  "fifties": [
-    {
-      "icon": "test.svg",
-      "text": "Shorts or long tights"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Long-sleeved base layer"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Sunglasses"
-    }
-  ],
-  "sixties": [
-    {
-      "icon": "test.svg",
-      "text": "Capri tights"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Short-sleeved shirt"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Sunglasses"
-    }
-  ],
-  "seventies-above": [
-    {
-      "icon": "test.svg",
-      "text": "Shorts"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Tank top or short-sleeved shirt"
-    },
-    {
-      "icon": "test.svg",
-      "text": "Sunglasses"
-    }
-  ]
-}
+[
+  {
+    "id": 0,
+    "icon": "test.svg",
+    "text": "Tights"
+  },
+  {
+    "id": 0,
+    "icon": "test.svg",
+    "text": "Running pants"
+  },
+  {
+    "id": 0,
+    "icon": "test.svg",
+    "text": "Thin, base layer long sleeve shirt"
+  },
+  {
+    "id": 0,
+    "icon": "test.svg",
+    "text": "Long sleeve fleece"
+  },
+  {
+    "id": 0,
+    "icon": "test.svg",
+    "text": "Wind/water resistant jacket"
+  },
+  {
+    "id": 0,
+    "icon": "test.svg",
+    "text": "Gloves"
+  },
+  {
+    "id": 0,
+    "icon": "test.svg",
+    "text": "Thermal hat or headband"
+  },
+  {
+    "id": 0,
+    "icon": "test.svg",
+    "text": "Neck warmer"
+  },
+  {
+    "id": 0,
+    "icon": "test.svg",
+    "text": "Sunglasses"
+  },
+  {
+    "id": 1,
+    "icon": "test.svg",
+    "text": "Tights"
+  },
+  {
+    "id": 1,
+    "icon": "test.svg",
+    "text": "Thin, base layer long sleeve shirt"
+  },
+  {
+    "id": 1,
+    "icon": "test.svg",
+    "text": "Wind/water resistant jacket"
+  },
+  {
+    "id": 1,
+    "icon": "test.svg",
+    "text": "Gloves"
+  },
+  {
+    "id": 1,
+    "icon": "test.svg",
+    "text": "Thermal hat or headband"
+  },
+  {
+    "id": 1,
+    "icon": "test.svg",
+    "text": "Sunglasses"
+  },
+  {
+    "id": 2,
+    "icon": "test.svg",
+    "text": "Tights"
+  },
+  {
+    "id": 2,
+    "icon": "test.svg",
+    "text": "Long-sleeved base layer"
+  },
+  {
+    "id": 2,
+    "icon": "test.svg",
+    "text": "Wind resistant vest"
+  },
+  {
+    "id": 2,
+    "icon": "test.svg",
+    "text": "Sunglasses"
+  },
+  {
+    "id": 3,
+    "icon": "test.svg",
+    "text": "Shorts or long tights"
+  },
+  {
+    "id": 3,
+    "icon": "test.svg",
+    "text": "Long-sleeved base layer"
+  },
+  {
+    "id": 3,
+    "icon": "test.svg",
+    "text": "Sunglasses"
+  },
+  {
+    "id": 4,
+    "icon": "test.svg",
+    "text": "Capri tights"
+  },
+  {
+    "id": 4,
+    "icon": "test.svg",
+    "text": "Short-sleeved shirt"
+  },
+  {
+    "id": 4,
+    "icon": "test.svg",
+    "text": "Sunglasses"
+  },
+  {
+    "id": 5,
+    "icon": "test.svg",
+    "text": "Shorts"
+  },
+  {
+    "id": 5,
+    "icon": "test.svg",
+    "text": "Tank top or short-sleeved shirt"
+  },
+  {
+    "id": 5,
+    "icon": "test.svg",
+    "text": "Sunglasses"
+  }
+]
