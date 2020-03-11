@@ -1,29 +1,34 @@
 <template>
-  <section v-if="typeof weather.main != 'undefined'">
-    <h2>What to wear running</h2>
-    <template v-if="typeof weather.main != 'undefined' && weather.main.temp < 30">
-      <temp-below-freezing />
-    </template>
-    <template v-if="typeof weather.main != 'undefined'
-      && weather.main.temp > 30 && weather.main.temp < 40">
-      <temp-thirties />
-    </template>
-    <template v-if="typeof weather.main != 'undefined'
-      && weather.main.temp > 40 && weather.main.temp < 50">
-      <temp-forties />
-    </template>
-    <div v-if="typeof weather.main != 'undefined'
-      && weather.main.temp > 50 && weather.main.temp < 60">
-      <temp-fifties />
+  <section class="clothing-container__wrapper" v-if="typeof weather.main != 'undefined'">
+    <div class="container container--max-width">
+      <div class="clothing-container__inner">
+        <h2 class="u-margin-hug-top u-text-center">What to wear running</h2>
+        <div v-if="typeof weather.main != 'undefined' && weather.main.temp < 30">
+          <temp-below-freezing />
+        </div>
+        <div v-if="typeof weather.main != 'undefined'
+          && weather.main.temp > 30 && weather.main.temp < 40">
+          <temp-thirties />
+        </div>
+        <div v-if="typeof weather.main != 'undefined'
+          && weather.main.temp > 40 && weather.main.temp < 50">
+          <temp-forties />
+        </div>
+        <div v-if="typeof weather.main != 'undefined'
+          && weather.main.temp > 50 && weather.main.temp < 60">
+          <temp-fifties />
+        </div>
+        <div v-if="typeof weather.main != 'undefined'
+          && weather.main.temp > 60 && weather.main.temp < 70">
+          <temp-sixties />
+        </div>
+        <div v-if="typeof weather.main != 'undefined' && weather.main.temp > 70">
+          <temp-seventies-above />
+        </div>
+      </div>
     </div>
-    <template v-if="typeof weather.main != 'undefined'
-      && weather.main.temp > 60 && weather.main.temp < 70">
-      <temp-sixties />
-    </template>
-    <template v-if="typeof weather.main != 'undefined' && weather.main.temp > 70">
-      <temp-seventies-above />
-    </template>
   </section>
+  <!-- /.clothing-container__wrapper -->
 </template>
 
 <script>

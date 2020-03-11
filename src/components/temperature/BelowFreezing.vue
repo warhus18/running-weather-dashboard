@@ -1,15 +1,88 @@
 <template>
-  <ol>
-    <li>Tights</li>
-    <li>Running pants</li>
-    <li>Thin, base layer long sleeve shirt</li>
-    <li>Long sleeve fleece</li>
-    <li>Wind/water resistant jacket</li>
-    <li>Gloves</li>
-    <li>Thermal hat or headband</li>
-    <li>Neck warmer</li>
-    <li>Sunglasses if sunny</li>
+  <ol class="u-list-unstyled container__grid container__grid--3col clothing-list__container">
+    <li class="clothing-list__item">
+      <div class="u-text-center">
+        <div class="clothing-list__img">
+          <img src="https://via.placeholder.com/100x100" srcset="https://via.placeholder.com/100x100 1x, https://via.placeholder.com/200x200  2x" alt="Alternative Text Describing the Image">
+        </div>
+        <span class="clothing-list__text">Tights</span>
+      </div>
+    </li>
+    <!-- /. clothing-list__item -->
+    <li class="clothing-list__item">
+      <div class="u-text-center">
+        <div class="clothing-list__img">
+          <img src="https://via.placeholder.com/100x100" srcset="https://via.placeholder.com/100x100 1x, https://via.placeholder.com/200x200  2x" alt="Alternative Text Describing the Image">
+        </div>
+        <span class="clothing-list__text">Running pants</span>
+      </div>
+    </li>
+    <!-- /. clothing-list__item -->
+    <li class="clothing-list__item">
+      <div class="u-text-center">
+        <div class="clothing-list__img">
+          <img src="https://via.placeholder.com/100x100" srcset="https://via.placeholder.com/100x100 1x, https://via.placeholder.com/200x200  2x" alt="Alternative Text Describing the Image">
+        </div>
+        <span class="clothing-list__text">Thin, base layer long sleeve shirt</span>
+      </div>
+    </li>
+    <!-- /. clothing-list__item -->
+    <li class="clothing-list__item">
+      <div class="u-text-center">
+        <div class="clothing-list__img">
+          <img src="https://via.placeholder.com/100x100" srcset="https://via.placeholder.com/100x100 1x, https://via.placeholder.com/200x200  2x" alt="Alternative Text Describing the Image">
+        </div>
+        <span class="clothing-list__text">Long sleeve fleece</span>
+      </div>
+    </li>
+    <!-- /. clothing-list__item -->
+    <li class="clothing-list__item">
+      <div class="u-text-center">
+        <div class="clothing-list__img">
+          <img src="https://via.placeholder.com/100x100" srcset="https://via.placeholder.com/100x100 1x, https://via.placeholder.com/200x200  2x" alt="Alternative Text Describing the Image">
+        </div>
+        <span class="clothing-list__text">Wind/water resistant jacket</span>
+      </div>
+    </li>
+    <!-- /. clothing-list__item -->
+    <li class="clothing-list__item">
+      <div class="u-text-center">
+        <div class="clothing-list__img">
+          <img src="https://via.placeholder.com/100x100" srcset="https://via.placeholder.com/100x100 1x, https://via.placeholder.com/200x200  2x" alt="Alternative Text Describing the Image">
+        </div>
+        <span class="clothing-list__text">Gloves</span>
+      </div>
+    </li>
+    <!-- /. clothing-list__item -->
+    <li class="clothing-list__item">
+      <div class="u-text-center">
+        <div class="clothing-list__img">
+          <img src="https://via.placeholder.com/100x100" srcset="https://via.placeholder.com/100x100 1x, https://via.placeholder.com/200x200  2x" alt="Alternative Text Describing the Image">
+        </div>
+        <span class="clothing-list__text">Thermal hat or headband</span>
+      </div>
+    </li>
+    <!-- /. clothing-list__item -->
+    <li class="clothing-list__item">
+      <div class="u-text-center">
+        <div class="clothing-list__img">
+          <img src="https://via.placeholder.com/100x100" srcset="https://via.placeholder.com/100x100 1x, https://via.placeholder.com/200x200  2x" alt="Alternative Text Describing the Image">
+        </div>
+        <span class="clothing-list__text">Neck warmer</span>
+      </div>
+    </li>
+    <!-- /. clothing-list__item -->
+    <li class="clothing-list__item">
+      <div class="u-text-center">
+        <div class="clothing-list__img">
+          <img src="https://via.placeholder.com/100x100" srcset="https://via.placeholder.com/100x100 1x, https://via.placeholder.com/200x200  2x" alt="Alternative Text Describing the Image">
+        </div>
+        <span class="clothing-list__text">Sunglasses</span>
+      </div>
+    </li>
+    <!-- /. clothing-list__item -->
   </ol>
+  <!-- /.clothing-list__container -->
 </template>
 
 <script>

@@ -28,6 +28,13 @@
   @include bem-e('grid') {
     @include grid-setup();
 
+    @include bem-m('3col') {
+      
+      @media (min-width: $screen-sm-min) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
     @include bem-m('centered') {
       justify-content: center;
       margin: 0 auto;

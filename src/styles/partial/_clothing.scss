@@ -1,0 +1,39 @@
+/*
+ * site container and grid elements
+ *
+ ************************************************************/
+
+.clothing-container {
+
+  @include bem-e('wrapper') {
+    background-color: $gray-light;
+  }
+
+  @include bem-e('inner') {
+    padding: ($spacer * 4) 0;
+  }
+}
+
+.clothing-list {
+
+  @include bem-e('container') {
+    margin-top: $spacer;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: ($spacer * 2);
+    }
+  }
+
+  @include bem-e('item') {
+    box-shadow: $box-shadow-default;
+    padding: ($spacer * 2);
+    background-color: $white;
+  }
+
+  @include bem-e('img') {}
+  
+  @include bem-e('text') {
+    display: block;
+    margin-top: $spacer;
+  }
+}

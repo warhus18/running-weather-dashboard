@@ -71,6 +71,8 @@ $screen-lg-max:              ($screen-xl-min - 1) !default;
  *
  ************************************************************************************************/
 
+$box-shadow-default: 0 2px 24px 0 rgba($gray-dark, .15);
+
 $spacer: 16px;
 
 $transition-duration: .3s;
